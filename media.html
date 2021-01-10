@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Signal TV</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="lib/styles/main.scss">
+</head>
+
+<body>
+  <div class="pageloader is-active"><span class="title">Grab the popcorn ...</span></div>
+  <nav class="navbar has-shadow-dark is-dark" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="index.html">
+        <img class="is-logo" src="https://ik.imagekit.io/3l1z4b3th/signal/type_logo_KZUOovR4o.svg" width="112" height="28">
+      </a>
+    </div>
+    <div class="navbar-end">
+      <div class="navbar-item"> 
+        <p class="mr-4 slogan is-4">A <span class="is-fancy">nui</span> way to watch media</p>
+      </div>
+    </div>
+  </nav>
+  <section class="section is-gapless">
+    <div class="container">
+      <a class="button is-medium is-primary" href="index.html">🡰 Back</a>
+    </div>
+  </section>
+  <section id="info-section" class="section">
+    <div id="media-container" class="container">
+      <script id="media-template" type="text/x-handlebars-template">
+        <div class="info columns">
+          <div class="column is-third">
+            <div class="is-centered-content" style="background-image:url({{thumbnail}}); background-size: contain; background-repeat: no-repeat; 
+              background-position:center center; height: 512px; width: 362px; filter: drop-shadow(0.1rem 0.1rem 0.6rem rgba(0,0,0,0.5));">
+              <button class="watch button is-large is-info" data-title={{title}} href={{url}}>📺 Watch</button>
+            </div>
+          </div>
+          <div class="column is-two-thirds">
+            <h1 class="title is-2 has-text-light">{{title}}</h1><h2 class="subtitle has-text-light">{{releaseYear}}</h2>
+            <p class="description is-size-4 has-text-light">{{desc}}</p>
+            <span class="rating" data-rating={{rating}}></span>
+            <br><br>
+            <button class="watch-list button is-success is-normal" data-id={{id}}>➕ Add to Watch Later</button>
+          </div>
+        </div>
+      </div>
+      <div class="modal">
+      <div class="modal-background"></div>
+      <div class="modal-content">
+        <div class="player">
+          <video id="yt-container" preload="metadata" data-yt2html5={{videoId}}></video>
+          <div class="player__controls">
+            <div class="progress">
+              <div class="progress__filled"></div>
+            </div>
+            <button class="player__button toggle" title="Toggle Play">►</button>
+            <button data-skip="-10" class="player__button">« 10s</button>
+            <button data-skip="25" class="player__button">25s »</button>
+            <button data-view="0" class="player__button toggle">🡴🡵</button> <!-- 🡶🡷 -->
+           </div>
+        </div>
+      <button class="modal-close is-large" aria-label="close"></button>
+      </div>
+    </script>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop is-centered-content">
+      <video id="gesture-capture" class="is-gesture-window"></video>
+    </div>
+  </section>
+  <script src="media.js"></script>
+</body>
+
+</html>

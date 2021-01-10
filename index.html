@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Signal TV</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="lib/styles/main.scss">
+</head>
+
+<body>
+  <div class="pageloader is-active"><span class="title">Get ready to Signal ...</span></div>
+  <nav class="navbar has-shadow-dark is-dark" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="#">
+        <img class="is-logo" src="https://ik.imagekit.io/3l1z4b3th/signal/type_logo_KZUOovR4o.svg" width="112" height="28">
+      </a>
+    </div>
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <p class="mr-4 slogan is-4">A <span class="is-fancy">nui</span> way to watch media</p>
+      </div>
+    </div>
+  </nav>
+  <section class="section is-medium">
+    <div class="container">
+      <div class="swiper-container">
+        <div id="slide-list" class="swiper-wrapper">
+          <script id="slide-template" type="text/x-handlebars-template">
+            {{#each slides}}
+            <div class="swiper-slide" style="background-image:url({{thumbnail}}); background-size: cover;"><a data-title="{{title}}" data-slug={{slug}} href="media.html?content={{slug}}&id={{@index}}">{{title}}</div>
+            {{/each}}
+            </script>
+        </div>
+      </div>
+      <!-- Add Arrows -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container is-max-desktop is-centered-content">
+      <video id="gesture-capture" class="is-gesture-window"></video>
+    </div>
+  </section>
+</body>
+<script src="app.js"></script>
+
+</html>

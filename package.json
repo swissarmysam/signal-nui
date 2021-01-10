@@ -1,0 +1,39 @@
+{
+  "name": "signal-tv",
+  "version": "0.0.1",
+  "description": "Signal TV is a NUI prototype for media streaming services. This has been created as part of CT6008.",
+  "main": "app.js",
+  "scripts": {
+    "start": "parcel index.html media.html guide.html",
+    "build": "parcel build index.html media.html guide.html"
+  },
+  "author": "Samuel Rampling - s1804867",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "babel-preset-es2015-ie": "^6.7.0",
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.32.0"
+  },
+  "browserslist": [
+    "last 1 chrome versions"
+  ],
+  "dependencies": {
+    "@tensorflow-models/handpose": "0.0.6",
+    "@tensorflow/tfjs-backend-cpu": "^2.8.2",
+    "@tensorflow/tfjs-backend-webgl": "^2.8.2",
+    "@tensorflow/tfjs-converter": "^2.8.2",
+    "@tensorflow/tfjs-core": "^2.8.2",
+    "@thelevicole/youtube-to-html5-loader": "^3.1.1",
+    "animate.css": "^4.1.1",
+    "bulma": "^0.9.1",
+    "bulma-pageloader": "^0.3.0",
+    "bulma-toast": "^2.2.0",
+    "handlebars": "^4.7.6",
+    "howler": "^2.2.1",
+    "lite-youtube-embed": "^0.1.2",
+    "swiper": "^6.4.5",
+    "utils": "^0.3.1",
+    "wai": "^0.2.0"
+  }
+}
