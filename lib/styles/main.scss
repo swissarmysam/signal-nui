@@ -27,7 +27,7 @@ $accent: #E75152;
 
 @mixin display-element {
   display: block;
-  z-index: 6;
+  z-index: 1;
 }
 
 @mixin quick-center {
@@ -36,10 +36,15 @@ $accent: #E75152;
   justify-content: center;
 }
 
+/* PAGELOADER */
+.pageloader {
+  background: #231A21 !important;
+}
+
 /* ALL PAGE STYLES */
 
 :root {
-  --swiper-theme-color: black !important;
+  --swiper-theme-color: rgba(0, 0, 0, 0.938) !important;
 }
 
 html {
@@ -47,7 +52,7 @@ html {
 }
 
 body {
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
   background-color: #32242f;
 }
@@ -70,7 +75,29 @@ body {
 }
 
 .is-fancy {
-  font-family: 'Yellowtail', cursive;
+  color: $accent;
+  font-weight: bold;
+  font-style: normal !important;
+}
+
+.is-inactive {
+  visibility: hidden;
+  height: 50%;
+}
+
+button.is-accent {
+  border-color: $accent;
+}
+
+.is-accent {
+  background: $accent;
+}
+
+/* VIDEO CAPTURE */
+video#gesture-capture{
+  transform: rotateY(180deg);
+  -webkit-transform:rotateY(180deg); /* Safari and Chrome */
+  -moz-transform:rotateY(180deg); /* Firefox */
 }
 
 /** HOME PAGE **/
@@ -129,6 +156,11 @@ body {
 }
 
 /** MEDIA PAGE **/
+
+.back > a {
+  text-decoration: none;
+  color: white;
+}
 
 .rating {
   font-size: 2rem;

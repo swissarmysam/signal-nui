@@ -20,13 +20,13 @@
     </div>
     <div class="navbar-end">
       <div class="navbar-item"> 
-        <p class="mr-4 slogan is-4">A <span class="is-fancy">nui</span> way to watch media</p>
+        <p class="mr-4 is-4 is-italic has-text-weight-semibold">A <span class="is-fancy">NUI</span> way to watch media</p>
       </div>
     </div>
   </nav>
   <section class="section is-gapless">
     <div class="container">
-      <a class="button is-medium is-primary" href="index.html">🡰 Back</a>
+      <button class="back button is-medium is-primary"><a href="index.html">🡰 Back</a></button>
     </div>
   </section>
   <section id="info-section" class="section">
@@ -36,15 +36,15 @@
           <div class="column is-third">
             <div class="is-centered-content" style="background-image:url({{thumbnail}}); background-size: contain; background-repeat: no-repeat; 
               background-position:center center; height: 512px; width: 362px; filter: drop-shadow(0.1rem 0.1rem 0.6rem rgba(0,0,0,0.5));">
-              <button class="watch button is-large is-info" data-title={{title}} href={{url}}>📺 Watch</button>
+              <button class="watch button is-large is-accent has-text-white" data-title={{title}} href={{url}}>📺 Watch</button>
             </div>
           </div>
           <div class="column is-two-thirds">
-            <h1 class="title is-2 has-text-light">{{title}}</h1><h2 class="subtitle has-text-light">{{releaseYear}}</h2>
-            <p class="description is-size-4 has-text-light">{{desc}}</p>
+            <h1 class="title is-2 has-text-light has-text-weight-bold">{{title}}</h1><h2 class="subtitle has-text-light has-text-weight-light">{{releaseYear}}</h2>
+            <p class="description is-size-4 has-text-light has-text-weight-normal">{{desc}}</p>
             <span class="rating" data-rating={{rating}}></span>
             <br><br>
-            <button class="watch-list button is-success is-normal" data-id={{id}}>➕ Add to Watch Later</button>
+            <button class="watch-list button is-success is-normal has-text-weight-semibold" data-id={{id}}>➕ Add to Watch Later</button>
           </div>
         </div>
       </div>
@@ -60,7 +60,7 @@
             <button class="player__button toggle" title="Toggle Play">►</button>
             <button data-skip="-10" class="player__button">« 10s</button>
             <button data-skip="25" class="player__button">25s »</button>
-            <button data-view="0" class="player__button toggle">🡴🡵</button> <!-- 🡶🡷 -->
+            <button data-view="0" class="view-mode player__button toggle">🡴🡵</button> <!-- 🡶🡷 -->
            </div>
         </div>
       <button class="modal-close is-large" aria-label="close"></button>
@@ -70,7 +70,9 @@
 
   <section class="section">
     <div class="container is-max-desktop is-centered-content">
-      <video id="gesture-capture" class="is-gesture-window"></video>
+      <p class="timer is-inactive">Expires in <span>5</span> ...</p>
+      <video id="gesture-capture" class="is-gesture-window is-inactive"></video>
+      <h3 class="subtitle is-3">Don't know what to do? Try saying "Signal, show me all gestures"</h3>
     </div>
   </section>
   <script src="media.js"></script>

@@ -4,6 +4,7 @@
 import { preloader } from './lib/modules/preloader';
 import { initSwiper } from './lib/modules/videoSwiper';
 import { initGestures } from './lib/modules/handSetup';
+import { initVoice } from './lib/modules/voiceSetup';
 import { renderContent } from './lib/modules/renderContent';
 import CMS from './lib/data/cms';
 
@@ -11,9 +12,9 @@ import CMS from './lib/data/cms';
 const _init = () => {
   renderContent('#slide-template', '#slide-list', CMS);
   localStorage.setItem('page', 'home');
-  localStorage.setItem('firstVisit', true);
 
   initSwiper();
+  initVoice();
   initGestures();
   preloader(1000);
 };

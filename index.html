@@ -20,7 +20,7 @@
     </div>
     <div class="navbar-end">
       <div class="navbar-item">
-        <p class="mr-4 slogan is-4">A <span class="is-fancy">nui</span> way to watch media</p>
+        <p class="mr-4 is-4 is-italic has-text-weight-semibold">A <span class="is-fancy">NUI</span> way to watch media</p>
       </div>
     </div>
   </nav>
@@ -30,7 +30,7 @@
         <div id="slide-list" class="swiper-wrapper">
           <script id="slide-template" type="text/x-handlebars-template">
             {{#each slides}}
-            <div class="swiper-slide" style="background-image:url({{thumbnail}}); background-size: cover;"><a data-title="{{title}}" data-slug={{slug}} href="media.html?content={{slug}}&id={{@index}}">{{title}}</div>
+            <div class="swiper-slide has-text-weight-semibold" style="background-image:url({{thumbnail}}); background-size: cover;"><a data-title="{{title}}" data-slug={{slug}} href="media.html?content={{slug}}&id={{@index}}">{{title}}</div>
             {{/each}}
             </script>
         </div>
@@ -42,7 +42,9 @@
   </section>
   <section class="section">
     <div class="container is-max-desktop is-centered-content">
-      <video id="gesture-capture" class="is-gesture-window"></video>
+      <p class="timer is-inactive">Expires in <span>5</span> ...</p>
+      <video id="gesture-capture" class="is-gesture-window is-inactive"></video>
+      <h3 class="subtitle is-3">Don't know what to do? Try saying "Signal, show me all gestures"</h3>
     </div>
   </section>
 </body>

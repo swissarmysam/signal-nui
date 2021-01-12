@@ -7,6 +7,7 @@ import { initGestures } from './lib/modules/handSetup';
 import { renderContent } from './lib/modules/renderContent';
 import { initHandlers } from './lib/modules/handlerSetup';
 import { initPlayer } from './lib/modules/videoControl';
+import { initVoice } from './lib/modules/voiceSetup';
 
 import CMS from './lib/data/cms';
 
@@ -21,9 +22,12 @@ const _init = () => {
   } else {
     window.location = 'index.html?error=cnf';
   }
+
   initHandlers();
-  initPlayer();
+  initVoice();
   initGestures();
+  initPlayer();
+
   preloader(1000);
 };
 
