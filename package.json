@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "start": "parcel index.html media.html guide.html",
-    "build": "parcel build index.html media.html guide.html -d public"
+    "build": "parcel build index.html media.html guide.html --public-url ./dist/"
   },
   "author": "Samuel Rampling - s1804867",
   "license": "MIT",
