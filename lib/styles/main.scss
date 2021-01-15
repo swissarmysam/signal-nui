@@ -93,6 +93,11 @@ body {
   height: 50%;
 }
 
+.is-zero-zero {
+  height: 0;
+  width: 0;
+}
+
 button.is-accent {
   border-color: $accent;
 }
