@@ -4,8 +4,10 @@
   "description": "Signal TV is a NUI prototype for media streaming services. This has been created as part of CT6008.",
   "main": "app.js",
   "scripts": {
-    "start": "parcel index.html media.html guide.html",
-    "build": "parcel build *.html -d dist"
+    "start": "parcel src/index.html -p 3000 --open",
+    "build:parcel": "parcel build *.html --public-url ./ --no-source-maps",
+    "build": "npm run clean && npm run build:parcel",
+    "clean": "rm -rf dist/*"
   },
   "author": "Samuel Rampling - s1804867",
   "license": "MIT",
