@@ -11,23 +11,45 @@
 </head>
 
 <body>
+  <!-- PAGELOADER -->
   <div class="pageloader is-active"><span class="title">Get ready to Signal ...</span></div>
+  <!-- FOR GITHUB CODE AFTER MARKING -->
+  <!-- <section class="hero is-bold is-info">
+    <div class="hero-body">
+      <div class="container">
+        <h3 class="subtitle"><a href="https://github.com/swissarmysam/signal-nui" target="_blank">View the source code ➔</a></h3>
+        <a class="close">⮿ Hide</a>
+      </div>
+    </div>
+  </section> -->
+  <!-- NAV BAR -->
   <nav class="navbar has-shadow-dark is-dark" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
       <a class="navbar-item" href="#">
-        <img class="is-logo" src="https://ik.imagekit.io/3l1z4b3th/signal/type_logo_KZUOovR4o.svg" width="112" height="28">
+        <img class="is-logo" src="https://ik.imagekit.io/3l1z4b3th/signal/type_logo_KZUOovR4o.svg" width="112"
+          height="28">
       </a>
     </div>
     <div class="navbar-end">
       <div class="navbar-item">
-        <p class="mr-4 is-4 is-italic has-text-weight-semibold">A <span class="is-fancy">NUI</span> way to watch media</p>
+        <p class="mr-4 is-4 is-italic has-text-weight-semibold">A <span class="is-fancy">NUI</span> way to watch media
+        </p>
       </div>
     </div>
   </nav>
-  <section class="section is-medium">
+  <!-- BASIC FEATURE DETECTION - HIDDEN UNLESS SPEECH OR VIDEO IS NOT AVAILABLE IN BROWSER -->
+  <section class="feature-detection section is-small is-hidden">
+    <div class="container is-centered-content">
+      <p class="has-text-danger has-text-weight-semibold">Please use an up-to-date version of Google Chrome to use NUI
+        features</p>
+    </div>
+    <!-- SLIDER SECTION -->
+  </section>
+  <section class="section is-medium-top">
     <div class="container">
       <div class="swiper-container">
         <div id="slide-list" class="swiper-wrapper">
+          <!-- HANDLEBARS TEMPLATE - LOOP OVER CMS OBJECT AND CREATE A SLIDE FOR EACH VIDEO -->
           <script id="slide-template" type="text/x-handlebars-template">
             {{#each slides}}
             <div class="swiper-slide has-text-weight-semibold" style="background-image:url({{thumbnail}}); background-size: cover;"><a data-title="{{title}}" data-slug={{slug}} href="media.html?content={{slug}}&id={{@index}}">{{title}}</div>
@@ -35,15 +57,19 @@
             </script>
         </div>
       </div>
-      <!-- Add Arrows -->
+      <!-- ADD ARROWS TO SLIDER -->
       <div class="swiper-button-next"></div>
       <div class="swiper-button-prev"></div>
     </div>
   </section>
-  <section class="section">
+  <!-- VIDEO CAPTURE SECTION FOR GESTURES -->
+  <section class="section is-small">
     <div class="container is-max-desktop is-centered-content">
       <p class="timer is-inactive">Expires in <span>5</span> ...</p>
       <video id="gesture-capture" class="is-gesture-window is-inactive"></video>
+      <div class="all-gestures"><a href="guide.html"></a></div>
+    </div>
+    <div class="container is-max-desktop is-centered-content">
       <h3 class="subtitle is-3">Don't know what to do? Try saying "Signal, show me all gestures"</h3>
     </div>
   </section>

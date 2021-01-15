@@ -11,32 +11,39 @@
 </head>
 
 <body>
+  <!-- PAGELOADER -->
   <div class="pageloader is-active"><span class="title">Grab the popcorn ...</span></div>
+  <!-- NAV BAR -->
   <nav class="navbar has-shadow-dark is-dark" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
       <a class="navbar-item" href="index.html">
-        <img class="is-logo" src="https://ik.imagekit.io/3l1z4b3th/signal/type_logo_KZUOovR4o.svg" width="112" height="28">
+        <img class="is-logo" src="https://ik.imagekit.io/3l1z4b3th/signal/type_logo_KZUOovR4o.svg" width="112"
+          height="28">
       </a>
     </div>
     <div class="navbar-end">
-      <div class="navbar-item"> 
-        <p class="mr-4 is-4 is-italic has-text-weight-semibold">A <span class="is-fancy">NUI</span> way to watch media</p>
+      <div class="navbar-item">
+        <p class="mr-4 is-4 is-italic has-text-weight-semibold">A <span class="is-fancy">NUI</span> way to watch media
+        </p>
       </div>
     </div>
   </nav>
+  <!-- BACK BUTTON -->
   <section class="section is-gapless">
     <div class="container">
       <button class="back button is-medium is-primary"><a href="index.html">🡰 Back</a></button>
     </div>
   </section>
-  <section id="info-section" class="section">
+  <!-- MEDIA CONTENT SECTION -->
+  <section id="info-section" class="section is-small">
     <div id="media-container" class="container">
+      <!-- HANDLEBARS TEMPLATE - INDEX IS RETRIEVED FROM URL QUERY AND RELEVANT CONTENT DISPLAYED -->
       <script id="media-template" type="text/x-handlebars-template">
         <div class="info columns">
           <div class="column is-third">
             <div class="is-centered-content" style="background-image:url({{thumbnail}}); background-size: contain; background-repeat: no-repeat; 
               background-position:center center; height: 512px; width: 362px; filter: drop-shadow(0.1rem 0.1rem 0.6rem rgba(0,0,0,0.5));">
-              <button class="watch button is-large is-accent has-text-white" data-title={{title}} href={{url}}>📺 Watch</button>
+              <button class="watch button is-large is-accent has-text-white" data-title={{title}} href={{url}}>📺 Start</button>
             </div>
           </div>
           <div class="column is-two-thirds">
@@ -48,6 +55,7 @@
           </div>
         </div>
       </div>
+      <!-- MODAL FOR VIDEO CONTAINER - PLAYING MEDIA CONTENT -->
       <div class="modal">
       <div class="modal-background"></div>
       <div class="modal-content">
@@ -67,15 +75,18 @@
       </div>
     </script>
   </section>
-
+  <!-- VIDEO FOR GESTURE CAPTURE -->
   <section class="section">
     <div class="container is-max-desktop is-centered-content">
       <p class="timer is-inactive">Expires in <span>5</span> ...</p>
       <video id="gesture-capture" class="is-gesture-window is-inactive"></video>
+      <div class="all-gestures"><a href="guide.html"></a></div>
+    </div>
+    <div class="container is-max-desktop is-centered-content">
       <h3 class="subtitle is-3">Don't know what to do? Try saying "Signal, show me all gestures"</h3>
     </div>
   </section>
   <script src="media.js"></script>
-</body>
+</body>n
 
 </html>

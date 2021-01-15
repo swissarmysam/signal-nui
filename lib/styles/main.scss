@@ -9,12 +9,18 @@ $section-padding: 1.5rem 1.5rem;
 $section-padding-medium: 5.5rem 1.5rem;
 $dark: #4F3A4B;
 $accent: #E75152;
+/* TABLE VARS */
+$table-background-color: #32242f;
+$table-head-cell-color: $accent;
+$table-color: rgba(255,255,255,0.85);
+$table-cell-heading-color:  rgba(255,255,255,0.85);;
+$table-striped-row-even-background-color: rgba(255,255,255,0.1);
+$table-cell-border: 1px solid $accent;
 
 /* IMPORT PROJECT STYLES */
 @import "../../node_modules/bulma/sass/utilities/initial-variables";
 @import "../../node_modules/bulma";
 @import "../../node_modules/bulma-pageloader";
-@import "../../node_modules/animate.css";
 
 @import "../../node_modules/swiper/swiper-bundle.css";
 @import "../../node_modules/lite-youtube-embed/src/lite-yt-embed.css";
@@ -57,6 +63,8 @@ body {
   background-color: #32242f;
 }
 
+/* BULMA ADAPTATIONS USING STANDARD NAMING CONVENTIONS */
+
 .has-shadow-dark {
   box-shadow: 0 2px 0 0 rgba(0,0,0,0.3);
 }
@@ -91,6 +99,10 @@ button.is-accent {
 
 .is-accent {
   background: $accent;
+}
+
+.is-medium-top {
+  padding: 5rem 1.5rem 1rem 1.5rem;
 }
 
 /* VIDEO CAPTURE */
@@ -162,6 +174,7 @@ video#gesture-capture{
   color: white;
 }
 
+/* HANDLER FOR GENERATED RATINGS */
 .rating {
   font-size: 2rem;
   color: gold;

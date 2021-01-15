@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Guide | Signal TV</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="lib/styles/main.scss">
+</head>
+
+<body>
+  <!-- PAGELOADER -->
+  <div class="pageloader is-active"><span class="title">Guide is loading ...</span></div>
+  <!-- NAV BAR -->
+  <nav class="navbar has-shadow-dark is-dark" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="index.html">
+        <img class="is-logo" src="https://ik.imagekit.io/3l1z4b3th/signal/type_logo_KZUOovR4o.svg" width="112"
+          height="28">
+      </a>
+    </div>
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <p class="mr-4 is-4 is-italic has-text-weight-semibold">A <span class="is-fancy">NUI</span> way to watch media
+        </p>
+      </div>
+    </div>
+  </nav>
+  <!-- BACK BUTTON SECTION -->
+  <section class="section is-gapless">
+    <div class="container">
+      <button class="back button is-medium is-primary"><a href="index.html">🡰 Back</a></button>
+    </div>
+  </section>
+  <!-- INSTRUCTIONS TABLE -->
+  <section id="info-section" class="section">
+    <table class="table is-fullwidth is-striped">
+      <thead>
+        <tr>
+          <th>Action</th>
+          <th>Camera</th>
+          <th>Microphone</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Wake</th>
+          <td>Wave hand</td>
+          <td>Signal, ...</td>
+        </tr>
+        <tr>
+          <th>Go Left</th>
+          <td>Point index and middle finger up on left hand</td>
+          <td>Signal, left</td>
+        </tr>
+        <tr>
+          <th>Go Right</th>
+          <td>Point index and middle finger up on right hand</td>
+          <td>Signal, right</td>
+        </tr>
+        <tr>
+          <th>Select</th>
+          <td>Point index and ring fingers up, fold middle and ring fingers</td>
+          <td>Signal, select</td>
+        </tr>
+        <tr>
+          <th>Go Back</th>
+          <td>Point index and middle finger up on left hand</td>
+          <td>Signal, go back</td>
+        </tr>
+        <tr>
+          <th>Refresh</th>
+          <td>Thumb down</td>
+          <td>Signal, refresh</td>
+        </tr>
+        <tr>
+          <th>Start Media</th>
+          <td>Point index and ring fingers, fold middle and ring fingers</td>
+          <td>Signal, start</td>
+        </tr>
+        <tr>
+          <th>Play</th>
+          <td>Clench fist</td>
+          <td>Signal, play or Signal, pause</td>
+        </tr>
+        <tr>
+          <th>Pause</th>
+          <td>Clench fist</td>
+          <td>Signal, pause</td>
+        </tr>
+        <tr>
+          <th>Skip Forward</th>
+          <td>Point index and middle finger up on right hand</td>
+          <td>Signal, skip forward</td>
+        </tr>
+        <tr>
+          <th>Skip Back</th>
+          <td>Point index and middle finger up on left hand</td>
+          <td>Signal, skip back</td>
+        </tr>
+        <tr>
+          <th>Full Screen</th>
+          <td>V symbol</td>
+          <td>Signal, full screen</td>
+        </tr>
+        <tr>
+          <th>Window Mode</th>
+          <td>V symbol</td>
+          <td>Signal, window mode</td>
+        </tr>
+        <tr>
+          <th>Close Media</th>
+          <td>Thumb and pink extended, all other fingers folded</td>
+          <td>Signal, close</td>
+        </tr>
+        <tr>
+          <th>Add to Watch Later</th>
+          <td>Thumb Up</td>
+          <td>Signal, add to watch list</td>
+        </tr>
+        <tr>
+          <th>Remove from Watch Later</th>
+          <td>Thumb Up</td>
+          <td>Signal, remove from watch list</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <!-- VIDEO FOR GESTURE CAPTURE -->
+  <section class="section">
+    <div class="container is-max-desktop is-centered-content">
+      <p class="timer is-inactive">Expires in <span>5</span> ...</p>
+      <video id="gesture-capture" class="is-gesture-window is-inactive"></video>
+    </div>
+  </section>
+  <script src="guide.js"></script>
+</body>
+
+</html>
