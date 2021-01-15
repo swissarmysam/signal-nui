@@ -4,7 +4,7 @@
   "description": "Signal TV is a NUI prototype for media streaming services. This has been created as part of CT6008.",
   "main": "app.js",
   "scripts": {
-    "start": "parcel src/index.html -p 3000 --open",
+    "start": "parcel *.html",
     "build:parcel": "parcel build *.html --public-url ./ --no-source-maps",
     "build": "npm run clean && npm run build:parcel",
     "clean": "rm -rf dist/*"
