@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "start": "parcel *.html",
-    "build:parcel": "parcel build *.html --public-url ./ --no-source-maps",
+    "build:parcel": "parcel build *.html --public-url ./",
     "build": "npm run clean && npm run build:parcel",
     "clean": "rm -rf dist/*"
   },
