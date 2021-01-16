@@ -21,6 +21,7 @@ $table-cell-border: 1px solid $accent;
 @import "../../node_modules/bulma/sass/utilities/initial-variables";
 @import "../../node_modules/bulma";
 @import "../../node_modules/bulma-pageloader";
+@import "../../node_modules/animate.css";
 
 @import "../../node_modules/swiper/swiper-bundle.css";
 
@@ -60,6 +61,14 @@ body {
   min-height: 100vh;
   width: 100vw;
   background-color: #32242f;
+}
+
+.timer {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  padding-bottom: 0.25rem;
+  color: $accent;
+  text-align: center;
 }
 
 /* BULMA ADAPTATIONS USING STANDARD NAMING CONVENTIONS */
