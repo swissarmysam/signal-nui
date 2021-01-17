@@ -83,11 +83,12 @@ If any issues with the build, please delete .babelrc and try running npm start a
 
 ### :thumbsdown: Troubleshooting
 
-| Issue | Solution |
-| Website frozen | Refresh |
-| Webcam not appearing | Check developer console for error. If video source could not be loaded then try unplugging webcam and using a different port |
-| Voice commands not working | Please use an up-to-date version of Chrome |
-| No sound effects | Workaround: Try clicking on the webpage with the mouse and refreshing the page |
+| Issue                      | Solution                                                                                                                     |
+| -------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| Website frozen             | Refresh                                                                                                                      |
+| Webcam not appearing       | Check developer console for error. If video source could not be loaded then try unplugging webcam and using a different port |
+| Voice commands not working | Please use an up-to-date version of Chrome                                                                                   |
+| No sound effects           | Workaround: Try clicking on the webpage with the mouse and refreshing the page                                               |
 
 ---
 
