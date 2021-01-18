@@ -35,6 +35,9 @@ Mouse control can be used if a webcam or speech recognition is not available.
 
 All videos are from [Blender Open Movies](https://www.blender.org/about/projects/)
 
+This app uses libraries and packages that are very large. The app itself is resource heavy so performance may depend on connection quality and available hardware.
+Testing has been carried out on Windows 10 machine with a AMD Ryzen 2700, 16GB RAM and RTX 2070.
+
 ---
 
 ## :hand: Commands
@@ -64,7 +67,7 @@ All videos are from [Blender Open Movies](https://www.blender.org/about/projects
 
 [CLICK HERE](https://signal-nui.xyz)
 
-:exclamation::exclamation::exclamation: (17/01/21) FULLY WORKING IN CHROME (v.87) ONLY :exclamation::exclamation::exclamation:
+:exclamation::exclamation::exclamation: USES EXPERIMENTAL BROWSER FEATURES. SUPPORT IS LIMITED. FULLY WORKING IN CHROME (v.87) ONLY (17/01/21) :exclamation::exclamation::exclamation:
 
 #### localhost usage
 
