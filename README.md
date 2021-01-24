@@ -59,7 +59,7 @@ Testing has been carried out on Windows 10 machine with a AMD Ryzen 2700, 16GB R
 | Add to Watch Later      | Thumb Up                                                      | Signal, add to watch list      |
 | Remove from Watch Later | Thumb Up                                                      | Signal, remove from watch list |
 
-_Some gestures have been removed as the workarounds were bad practice._ _Full screen motion gesture has been removed (this is disabled in Chrome anyway) and you can only refresh with voice._
+_Some gestures have been removed as they had a lot of false detections. Reduced the total number of gestures required to 7 to reduce burden on user._
 
 ### :thumbsup: Signal NUI Demo
 
@@ -91,8 +91,16 @@ If any issues with the build, please delete .babelrc and try running npm start a
 | Voice commands not working     | Please use an up-to-date version of Chrome                                                                                   |
 | No sound effects               | Workaround: Try clicking on the webpage with the mouse and refreshing the page                                               |
 | Wrong gesture detected         | Gestures need some fine-tuning so false detections do occur. Sorry!                                                          |
-| No sound in video              | This is due to how video is encoded. Sounds seems to be stripped. Looking for fix.                                           |
 | Go back command is not working | If you are using the app locally then this is the behaviour on localhost. It will work on server hosted app.                 |
+
+---
+
+### Known Issues
+
+1. fullScreenRequest requires user interaction. Not able to fire custom event for this. Need to mimic something close to full screen behaviour.
+2. No sound in video. This is due to how video is encoded. Sounds seems to be stripped. Looking for fix.
+3. Sound FX need mouse interaction to start in Chrome. Not sure if there is a workaround for this?
+4. Sometimes motion gestures result in custom event firing twice.
 
 ---
 
