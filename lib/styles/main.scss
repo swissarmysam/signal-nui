@@ -14,12 +14,14 @@ $table-background-color: #32242f;
 $table-head-cell-color: $accent;
 $table-color: rgba(255, 255, 255, 0.85);
 $table-cell-heading-color: rgba(255, 255, 255, 0.85);
-;
+
 $table-striped-row-even-background-color: rgba(255, 255, 255, 0.1);
 $table-cell-border: 1px solid $accent;
 $card-background-color: $dark;
 $card-header-color: $accent;
 $card-content-padding: 0.5rem;
+
+$modal-content-width: 1400px;
 
 /* IMPORT PROJECT STYLES */
 @import "../../node_modules/bulma/sass/utilities/initial-variables";
@@ -239,7 +241,7 @@ video#gesture-capture {
 }
 
 .player {
-  max-width: 750px;
+  width: 100%;
   border: 5px solid rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   position: relative;
