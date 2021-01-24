@@ -16,6 +16,9 @@ $table-color: rgba(255,255,255,0.85);
 $table-cell-heading-color:  rgba(255,255,255,0.85);;
 $table-striped-row-even-background-color: rgba(255,255,255,0.1);
 $table-cell-border: 1px solid $accent;
+$card-background-color: $dark;
+$card-header-color: $accent;
+$card-content-padding: 0.5rem;
 
 /* IMPORT PROJECT STYLES */
 @import "../../node_modules/bulma/sass/utilities/initial-variables";

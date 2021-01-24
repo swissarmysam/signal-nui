@@ -42,24 +42,24 @@ Testing has been carried out on Windows 10 machine with a AMD Ryzen 2700, 16GB R
 
 ## :hand: Commands
 
-| Action                  | Camera                                                        | Microphone                      |
-| ----------------------- | ------------------------------------------------------------- | ------------------------------- |
-| Wake                    | Wave hand                                                     | Signal, ...                     |
-| Next                    | Point index and middle finger up on left hand                 | Signal, next                    |
-| Previous                | Point index and middle finger up on right hand                | Signal, previous                |
-| Select                  | Point index and ring fingers up, fold middle and ring fingers | Signal, select                  |
-| Go Back                 | Point index and middle finger up on left hand                 | Signal, go back                 |
-| Refresh                 | Thumb down                                                    | Signal, refresh                 |
-| Start Media             | Point index and ring fingers, fold middle and ring fingers    | Signal, start                   |
-| Play                    | Clench fist                                                   | Signal, play                    |
-| Pause                   | Clench fist                                                   | Signal, pause                   |
-| Skip Forward            | Point index and middle finger up on right hand                | Signal, skip forward            |
-| Skip Back               | Point index and middle finger up on left hand                 | Signal, skip back               |
-| Full Screen             | V symbol                                                      | Signal, full screen             |
-| Window Mode             | V symbol                                                      | Signal, window mode             |
-| Close Media             | Thumb and pink extended, all other fingers folded             | Signal, close                   |
-| Add to Watch Later      | Thumb Up                                                      | Signal, add to watch later      |
-| Remove from Watch Later | Thumb Up                                                      | Signal, remove from watch later |
+| Action                  | Camera                                                        | Microphone                     |
+| ----------------------- | ------------------------------------------------------------- | ------------------------------ |
+| Wake                    | Wave hand                                                     | Signal, ...                    |
+| Go Left                 | Point index and middle finger up on left hand                 | Signal, left                   |
+| Go Right                | Point index and middle finger up on right hand                | Signal, right                  |
+| Select                  | Point index and ring fingers up, fold middle and ring fingers | Signal, select                 |
+| Go Back                 | Point index and middle finger up on left hand                 | Signal, go back                |
+| Refresh                 | Thumb down                                                    | Signal, refresh                |
+| Start Media             | Point index and ring fingers, fold middle and ring fingers    | Signal, start                  |
+| Play                    | Clench fist                                                   | Signal, play or Signal, pause  |
+| Pause                   | Clench fist                                                   | Signal, pause                  |
+| Skip Forward            | Point index and middle finger up on right hand                | Signal, skip forward           |
+| Skip Back               | Point index and middle finger up on left hand                 | Signal, skip back              |
+| Full Screen             | V symbol                                                      | Signal, full screen            |
+| Window Mode             | V symbol                                                      | Signal, window mode            |
+| Close Media             | Thumb and pink extended, all other fingers folded             | Signal, close                  |
+| Add to Watch Later      | Thumb Up                                                      | Signal, add to watch list      |
+| Remove from Watch Later | Thumb Up                                                      | Signal, remove from watch list |
 
 ---
 
@@ -92,6 +92,7 @@ If any issues with the build, please delete .babelrc and try running npm start a
 | Webcam not appearing       | Check developer console for error. If video source could not be loaded then try unplugging webcam and using a different port |
 | Voice commands not working | Please use an up-to-date version of Chrome                                                                                   |
 | No sound effects           | Workaround: Try clicking on the webpage with the mouse and refreshing the page                                               |
+| Wrong gesture detected     | Gestures need some fine-tuning so false detections do occur. Sorry!                                                          |
 
 ---
 
