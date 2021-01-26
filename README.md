@@ -105,21 +105,31 @@ If any issues with the build, please delete .babelrc and try running npm start a
 
 ---
 
+### Potential Improvements
+
+- Add gesture recognition for two hands (this is waiting for update from Tensorflow team)
+- Remove any unused CSS and JS to reduce overall app size
+- Fine tune the gestures so they are recognised better
+- Make progressive enhancement more graceful when using a browser other than Chrome
+- Improve speech recognition so more general phrases could be used
+- Add speech synthesis so voice feedback is provided to user
+
+---
+
 ### :books: References
 
-- Cole, L. (2020) Thelevicole/youtube-to-html5-loader, GitHub. Available at: https://github.com/thelevicole/youtube-to-html5-loader/ (Accessed: 17 January 2021).
-- Eden, D. (2018) Animate.css | A Cross-browser Library Of CSS Animations., animate.style. Available at: https://animate.style/ (Accessed: 17 January 2021).
-- Foundation, B. (no date) Open Movies, Blender.org. Available at: https://www.blender.org/about/projects/ (Accessed: 17 January 2021).
-- Freepik (no date) Poster Icons | Flaticon, The Largest Database Of Free Vector Icons, Flaticon. Available at: https://www.flaticon.com/ (Accessed: 26 January 2021).
+- Cole, L. (2020) Thelevicole/youtube-to-html5-loader, GitHub. Available at: <https://github.com/thelevicole/youtube-to-html5-loader/> (Accessed: 17 January 2021).
+- Eden, D. (2018) Animate.css | A Cross-browser Library Of CSS Animations., animate.style. Available at: <https://animate.style/> (Accessed: 17 January 2021).
+- Foundation, B. (no date) Open Movies, Blender.org. Available at: <https://www.blender.org/about/projects/> (Accessed: 17 January 2021).
+- Freepik (no date) Poster Icons | Flaticon, The Largest Database Of Free Vector Icons, Flaticon. Available at: <https://www.flaticon.com/> (Accessed: 26 January 2021).
 - Gerard, C. (2020) Practical Machine Learning in JavaScript. New York, NY: Apress, pp. 199–219.
-- Katz, Y. (2011) Handlebars. Available at: https://handlebarsjs.com/ (Accessed: 17 January 2021).
-- Kharlampidi, V. (2018) Getting Started With Swiper, Swiper. Available at: https://swiperjs.com/get-started/ (Accessed: 17 January 2021).
-- MediaPipe (2020) Tensorflow/tfjs-models, GitHub. Available at: https://github.com/tensorflow/tfjs-models/tree/master/handpose (Accessed: 17 January 2021).
-- Rasmussen, M. (2017) Mathiasvr/tiny-timer, GitHub. Available at: https://github.com/mathiasvr/tiny-timer (Accessed: 17 January 2021).
-- Simpson, J. (2017) Howler.js - JavaScript Audio Library For The Modern Web, howlerjs.com. Available at: https://howlerjs.com/ (Accessed: 17 January 2021).
-- Thomas, J. (2016) Bulma: Free, Open Source, And Modern CSS Framework Based On Flexbox, bulma.io. Available at: https://bulma.io/ (Accessed: 17 January 2021).
-- University of Nebraska (2016) Mdn/web-speech-api, GitHub. Available at: https://github.com/mdn/web-speech-api/tree/master/phrase-matcher (Accessed: 17 January 2021).
-
+- Katz, Y. (2011) Handlebars. Available at: <https://handlebarsjs.com/> (Accessed: 17 January 2021).
+- Kharlampidi, V. (2018) Getting Started With Swiper, Swiper. Available at: <https://swiperjs.com/get-started/> (Accessed: 17 January 2021).
+- MediaPipe (2020) Tensorflow/tfjs-models, GitHub. Available at: <https://github.com/tensorflow/tfjs-models/tree/master/handpose> (Accessed: 17 January 2021).
+- Rasmussen, M. (2017) Mathiasvr/tiny-timer, GitHub. Available at: <https://github.com/mathiasvr/tiny-timer> (Accessed: 17 January 2021).
+- Simpson, J. (2017) Howler.js - JavaScript Audio Library For The Modern Web, howlerjs.com. Available at: <https://howlerjs.com/> (Accessed: 17 January 2021).
+- Thomas, J. (2016) Bulma: Free, Open Source, And Modern CSS Framework Based On Flexbox, bulma.io. Available at: <https://bulma.io/> (Accessed: 17 January 2021).
+- University of Nebraska (2016) Mdn/web-speech-api, GitHub. Available at: <https://github.com/mdn/web-speech-api/tree/master/phrase-matcher> (Accessed: 17 January 2021).
 
 ---
 
